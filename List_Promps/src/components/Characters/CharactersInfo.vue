@@ -144,15 +144,6 @@
         dislikes.value=''
         preciousobject.value=''
     }
-
-    // Cambio de colores y textos de los objetos en la lista
-    const Magia = (payload: { id: number; BackColor: string; TextColor: string }) => {
-        const objectIndex = personajes.value.findIndex((personaje) => personaje.id === payload.id)
-        if (objectIndex !== -1) {
-            personajes.value[objectIndex].BackColor = payload.BackColor
-            personajes.value[objectIndex].TextColor = payload.TextColor
-        }
-    }
 </script>
 
 
@@ -192,7 +183,6 @@
         <ul>
             <CharactersInterface
             v-for="personaje in personajes"
-            :magia="Magia"
             :object="personaje"
             :key="personaje.id"
             />

@@ -43,12 +43,6 @@
     // Actualizar los colores
     BackColor.value = ColorBack
     TextColor.value = ColorText
-    // Emitir el evento con los colores actualizados
-    emits('Magia', {
-        id: props.object.id,
-        BackColor: ColorBack,
-        TextColor: ColorText
-    })
 }
 </script>
 
