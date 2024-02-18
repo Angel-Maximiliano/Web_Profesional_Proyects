@@ -106,7 +106,7 @@ const Login = () =>{
     }
 
     .Formulario button:hover {
-        background-color: rgb(84, 50, 20); /* Color de fondo al pasar el mouse */
+        background-color: rgb(84, 50, 20); 
     }
 
     .Formulario button:disabled {
